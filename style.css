@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #e9ecef;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+}
+
+.taskadder {
+    background-color: #f0f0f0;
+    width: 300px;
+    padding: 10px 10px 10px 5px;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.taskadder input {
+    outline: none;
+    border-radius: 4px;
+    width: 220px;
+    border: none;
+    padding: 8px;
+    margin-right: 4px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.taskadder button {
+    width: 50px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.taskadder button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.main-tasks {
+    width: 300px;
+    padding: 20px 15px 20px 8px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.main-tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0f2ff; /* Lighter blue for better contrast */
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px, rgba(0, 0, 0, 0.15) 0px 4px 6px;
+}
+
+.task li {
+    list-style: none;
+    font-size: 1.1rem;
+    color: #333333;
+    cursor: pointer;
+}
+
+.task li.completed {
+    text-decoration: line-through;
+    color: #999999;
+    opacity: 0.7;
+}
+
+.task i {
+    text-align: center;
+    background-color: #ff6b6b; /* Brighter red */
+    border-radius: 4px;
+    padding-top: 5px;
+    height: 25px;
+    width: 25px;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.task i:hover {
+    background-color: #c0392b; /* Darker red */
+    transform: scale(1.1);
+}
